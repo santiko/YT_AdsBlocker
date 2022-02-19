@@ -1,0 +1,14 @@
+{
+	"name":"Nge-blok Iklan Youtube",
+	"description":"Hanya sekedar iseng ajah...",
+	"version":"0.0.1",
+	"manifest_version":2,
+
+	"content_scripts":[{
+		"js":["skrip.js"],
+		"run_at":"document_idle",
+		"matches":["https://youtube.com/*"]
+	}],
+	"permissions":["tabs","activeTab"],
+	"icons":{"48":"blockads.png"}
+}
